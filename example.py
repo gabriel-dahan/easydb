@@ -1,4 +1,4 @@
-from database import AsyncPSQL
+from easydb import AsyncPSQL
 import asyncio
 
 db = AsyncPSQL(
