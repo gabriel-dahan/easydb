@@ -9,7 +9,7 @@ db = AsyncPSQL(
 )
 
 async def foo():
-    return await db.fetchval("SELECT something FROM table WHERE object = $1;", "value")
+    return await db.fetchval("SELECT something FROM table WHERE object = $1;", object)
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(create_table())
+loop.run_until_complete(foo())
