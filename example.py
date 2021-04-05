@@ -1,7 +1,8 @@
-from easydb import AsyncPSQL
 import asyncio
 
-db = AsyncPSQL(
+from easydb.psql import DatabaseConnection
+
+db = DatabaseConnection(
     "database", 
     "user", 
     "host", 
@@ -9,7 +10,8 @@ db = AsyncPSQL(
 )
 
 async def foo():
-    return await db.fetchval("SELECT something FROM table WHERE object = $1;", object)
+    obj = await db.fetchval("SELECT something FROM table WHERE object = $1;", object)
+    print(obj)
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(foo())
