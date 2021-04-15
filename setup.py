@@ -1,11 +1,11 @@
 import setuptools
 
 setuptools.setup(
-    name = "dpy_cooldowns",
+    name = "easydb",
     version = "1.0",
     author = "Gabriel D.",
-    description = "A package allowing you to create database command cooldowns w/discord.py.",
-    url = "https://github.com/gabriel-dahan/dpy-cooldowns",
+    description = "A package allowing you to interact with databases a simpler way.",
+    url = "https://github.com/gabriel-dahan/python-easydb",
     packages = setuptools.find_packages(),
     python_requires = '>=3.6',
     classifiers=[
