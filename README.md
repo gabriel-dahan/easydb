@@ -1,5 +1,5 @@
 # PSQL EasyConn
-A module that simplifies connections to databases.
+A module that simplifies asynchronous connections to PostgreSQL.
 
 ## Install and Import the module :
 
@@ -16,18 +16,15 @@ Installing the module :
 ```
 Importing the module :
 ```python
-from easydb.<db_type> import DatabaseConnection
-
-# Example
-from easydb.psql import DatabaseConnection # PostgreSQL support
+from easypsql.conn import DatabaseConnection
 # or
-from easydb import psql # and then psql.DatabaseConnection(...)
+from easypsql import psql # and then psql.DatabaseConnection(...)
 ```
 
 ## Example Code :
 ```python
 import asyncio
-from easydb.psql import DatabaseConnection
+from easypsql.conn import DatabaseConnection
 
 conn = DatabaseConnection(
     "database", 
