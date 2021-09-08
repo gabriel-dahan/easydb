@@ -1,11 +1,11 @@
 import setuptools
 
 setuptools.setup(
-    name = "easydb",
+    name = "easypsql",
     version = "1.0",
     author = "Gabriel D.",
-    description = "A package allowing you to interact with databases a simpler way.",
-    url = "https://github.com/gabriel-dahan/python-easydb",
+    description = "A package allowing you to interact with PostgreSQL a simpler way in python.",
+    url = "https://github.com/gabriel-dahan/psql-easyconn",
     packages = setuptools.find_packages(),
     python_requires = '>=3.6',
     classifiers=[

@@ -1,12 +1,12 @@
-# EasyDB
+# PSQL EasyConn
 A module that simplifies connections to databases.
 
 ## Install and Import the module :
 
 Installing the module :
 ```bash
-~ git clone https://github.com/gabriel-dahan/python-easydb/
-~ cd python-easydb/
+~ git clone https://github.com/gabriel-dahan/psql-easyconn/
+~ cd psql-easyconn/
 
 # Linux / MacOS
 ~ python3 -m pip install -U .
